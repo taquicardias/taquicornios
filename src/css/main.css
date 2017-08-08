@@ -1,0 +1,49 @@
+/*Estilos para la pantalla Login*/
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #fb8c00;
+}
+.logo{
+    margin-top: 200px;
+}
+#validacion .colorboton-azul{
+    background-color: #3b5998;
+    width:400px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    border-radius:15px;
+}
+
+#validacion .colorboton-azul-claro{
+    background-color: #2f84ea;
+    width:400px;
+    margin-bottom: 50px;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    border-radius:15px;
+}
+
+#validacion .colorboton-naranja{
+    background-color: #ea5038;
+    width:400px;
+    margin-bottom: 50px;
+    color:white;
+    padding:10px;
+    font-size:20px;
+    border-radius:15px;
+}
+.espacio-arriba{
+    margin-top: 50px;
+}
+#validacion .color-input{
+    background-color: #e9ebee;
+    border-radius: 15px;
+    width:400px;
+}
