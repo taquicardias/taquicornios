@@ -35,3 +35,9 @@ var googleButton = document.querySelector('.google-login');
 fbButton.addEventListener('click', loginWithFB);
 googleButton.addEventListener('click', loginWithGoogle);
 
+var splash = function(){
+	setTimeout(function(){
+	location.href = "pruebas/prueba-taqui.html"
+	},3000);
+}
+$(document).ready(splash);
