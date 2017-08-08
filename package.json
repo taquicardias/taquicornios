@@ -1,0 +1,26 @@
+{
+  "name": "taquicornios",
+  "version": "1.0.0",
+  "description": "api google maps, localstorage, validacion formulario, firebase",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmaliaRiveraC/taquicornios.git"
+  },
+  "keywords": [
+    "firebase",
+    "consumo",
+    "de",
+    "apis"
+  ],
+  "author": "Taquicardias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmaliaRiveraC/taquicornios/issues"
+  },
+  "homepage": "https://github.com/AmaliaRiveraC/taquicornios#readme"
+}
