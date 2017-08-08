@@ -30,6 +30,7 @@ var login = function(provider){
 	})
 		.then((response)=>{
 		location.href = 'validacion.html';
+		
 	})
 	  .catch(function(error) {
 		var errorCode = error.code;
