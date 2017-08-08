@@ -1,6 +1,9 @@
 var cargarPagina = function () {
     $('#validar').click(validacionCorreoElectronico, validacionTelefono);
-
+	var name = localStorage.getItem('name');
+	var email = localStorage.getItem('email');
+	$('#first_name').val(name);
+	$('#email').val(email);
 }
 
 
