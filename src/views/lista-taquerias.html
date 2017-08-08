@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Lista taquerías</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-		<style>
-			/* Always set the map height explicitly to define the size of the div
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista taquerías</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
 			* element that contains the map. */
-			#map {
-				height: 100%;
-			}
-			/* Optional: Makes the sample page fill the window. */
-			html, body {
-				height: 100%;
-				margin: 0;
-				padding: 0;
-			}
-		</style>
-	</head>
-	<body>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Taquicornios</a>
-			</div>
-		</nav>
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
 
-		<div id="map"></div>
+    </style>
+</head>
 
-		<script async defer
-				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbQhb_0o873AePVq1T6ys5v4O9DzzA8cI&callback=initMap">
-		</script>
-		<script>
-			function initMap() {
-				var uluru = {lat: -25.363, lng: 131.044};
-				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 4,
-					center: uluru
-				});
-				var marker = new google.maps.Marker({
-					position: uluru,
-					map: map
-				});
-			}
-		</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Taquicornios</a>
+        </div>
+    </nav>
+    
+    <main class="container-fluid">
+        <div id="map" class="col s12"></div>
+    </main>    
 
-	</body>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbQhb_0o873AePVq1T6ys5v4O9DzzA8cI&callback=initMap">
+
+
+    </script>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -25.363,
+                lng: 131.044
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+</body>
+
 </html>
