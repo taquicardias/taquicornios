@@ -37,7 +37,7 @@ googleButton.addEventListener('click', loginWithGoogle);
 
 var splash = function(){
 	setTimeout(function(){
-	location.href = "pruebas/prueba-taqui.html"
+	location.href = "login.html"
 	},3000);
 }
 $(document).ready(splash);
