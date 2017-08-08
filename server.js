@@ -6,5 +6,5 @@ var app = express();
 app.use('/static', express.static(path.join(__dirname, 'node_modules')));
 app.use('/static', express.static(path.join(__dirname, 'src/')));
 app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/src/index.html');
+	res.sendFile(__dirname + '/src' + '/index.html');
 }).listen(5000);

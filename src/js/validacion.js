@@ -1,5 +1,6 @@
 var cargarPagina = function () {
     $('#validar').click(validacionCorreoElectronico, validacionTelefono);
+
 }
 
 
